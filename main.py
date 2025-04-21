@@ -1,7 +1,6 @@
 from pathlib import Path
 import arguably
 import sys
-from typing import Union
 
 
 @arguably.command
