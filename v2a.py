@@ -8,7 +8,7 @@ def convert(
     input: Path, output: str, vocably_separator: str = "\t", anki_separator: str = ": "
 ):
     """
-    converts a Vocably export file to Anki deck
+    Converts a Vocably export file to Anki deck
 
     Args:
         input: the input Vocably file
@@ -26,6 +26,7 @@ def convert(
         with open(input, encoding="utf-8") as f:
             first = True
             for line in f.readlines():
+                # ignore header line
                 if first:
                     first = False
                     continue
