@@ -36,7 +36,11 @@ def convert(
 
                 parts = line.split(vocably_separator)
 
-                print(f"{parts[0]}{anki_separator}{parts[1]}", file=out)
+                word = parts[0]
+                translation = parts[1]
+                part_of_speech = parts[2]
+
+                print(f"{word} <i>({part_of_speech})</i>{anki_separator}{translation} <i>({part_of_speech})</i>", file=out)
     finally:
         out.close()
 
