@@ -18,7 +18,8 @@ options:
 ```
 
 or 
+
 ```
-> uvx v2a -h
+> uvx vocably2anki -h
 ...
 ```

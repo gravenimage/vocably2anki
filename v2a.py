@@ -47,7 +47,7 @@ def convert(
 
 # entrypoint specified in project.scripts in pyproject.toml
 def main():
-    arguably.run(name="v2a")
+    arguably.run(name="vocably2anki")
 
 if __name__ == "__main__":
     main()
