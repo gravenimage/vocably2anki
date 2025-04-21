@@ -44,6 +44,9 @@ def convert(
     finally:
         out.close()
 
+# entrypoint specified in project.scripts in pyproject.toml
+def main():
+    arguably.run(name="v2a")
 
 if __name__ == "__main__":
-    arguably.run()
+    main()
