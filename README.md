@@ -3,8 +3,8 @@ A quick converter of Vocably-export files into my own Anki format.  Extremely ha
 Usage:
 
 ```
-❯ uv run .\main.py -h
-usage: main.py [-h] vocably [vocably-separator] [anki-separator]
+❯ uv run .\v2a.py -h
+usage: v2a.py [-h] vocably [vocably-separator] [anki-separator]
 
 converts a Vocably export file to Anki deck
 
