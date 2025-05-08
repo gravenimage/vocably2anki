@@ -10,7 +10,7 @@ converts a Vocably export file to Anki deck
 
 positional arguments:
   vocably            the input CSV file (type: Path)
-  vocably-separator  the characters separating the vocably columns (type: str, default: |)
+  vocably-separator  the characters separating the vocably columns (type: str, default: \t)
   anki-separator     the characters separating two sides of the deck card (type: str, default: ': ')
 
 options:
