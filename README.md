@@ -1,4 +1,11 @@
-A quick converter of Vocably-export files into my own Anki format.  Extremely hard-coded.
+A quick converter of Vocably-export files into my own Anki format (extremely hard-coded).  For example, it converts a Vocably-exported file (with the default settings) into a text file with the following format:
+
+```
+ei lupe <i>(noun)</i>: magnifying glass <i>(noun)</i>
+et fleip <i>(noun)</i>: joke <i>(noun)</i>
+jeg spår <i>(verb)</i>: I predict <i>(verb)</i>
+et gjetord <i>(noun)</i>: impressive rumor, high repute <i>(noun)</i>
+```
 
 Usage:
 
