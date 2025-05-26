@@ -2,24 +2,39 @@ A quick converter of Vocably-export files into my own Anki format.  Extremely ha
 
 Usage:
 
-```
-❯ uv run .\v2a.py -h
-usage: v2a.py [-h] vocably [vocably-separator] [anki-separator]
+First, install [uv](https://docs.astral.sh/uv/getting-started/installation/).  Then run `vocably2anki` as a uv tool:
 
-converts a Vocably export file to Anki deck
+
+```
+❯ uvx vocably2anki -h
+usage: vocably2anki [-h] input output [vocably-separator] [anki-separator]
+
+Converts a Vocably export file to Anki deck
 
 positional arguments:
-  vocably            the input CSV file (type: Path)
-  vocably-separator  the characters separating the vocably columns (type: str, default: \t)
+  input              the input Vocably file (type: Path)
+  output             the output Anki file (use "-" for stdout).  File is overwritten. (type: str)
+  vocably-separator  the characters separating the vocably columns (type: str, default:      )
   anki-separator     the characters separating two sides of the deck card (type: str, default: ': ')
 
 options:
   -h, --help         show this help message and exit
 ```
 
-or 
+or run the python script directly (this example uses uv to manage the environment contained in `uv.lock`).
 
 ```
-> uvx vocably2anki -h
-...
+❯ uv run v2a.py -h
+usage: vocably2anki [-h] input output [vocably-separator] [anki-separator]
+
+Converts a Vocably export file to Anki deck
+
+positional arguments:
+  input              the input Vocably file (type: Path)
+  output             the output Anki file (use "-" for stdout).  File is overwritten. (type: str)
+  vocably-separator  the characters separating the vocably columns (type: str, default:      )
+  anki-separator     the characters separating two sides of the deck card (type: str, default: ': ')
+
+options:
+  -h, --help         show this help message and exit
 ```
